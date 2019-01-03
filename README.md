@@ -1,35 +1,62 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+## Run Test
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Main Folder in Windows 10
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
-
----
-
-## Edit a file
-
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
-
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+1. php bin/phpunit
 
 ---
 
-## Create a file
+## TDD - Unit testing with PHPUnit
 
-Next, you’ll add a new file to this repository.
+1. "unit testing is a software testing method by which individual units of source code [...] are tested to determine whether they aare fit for use."
+2. No testing user flow
+3. Not testing controllers
+4. Testing individual units (i.e. individual classes that do one job)
+5. Acceptance testing of business logic
+6. Integration testing
+7. The goal of unit testing is "to isolate each part of the program and show that the individual parts are correct"
+8. Testing is fun. Sometimes
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+---
+
+## More info about test (Copy-Past)
+
+1. Nick
+	- Pole nick nie może być puste
+- Długość nicka musi być dłuższa niż 3 znaki
+- Długość nicka musi być krótsza niż 20 znaków
+- Nick musi mieć co najmniej jedną, dużą literę (polski alfabet)
+- Nick musi mieć liczbę
+
+2. Adres Email 
+	- Pole email nie może być puste
+- Format: adres@xyz.com
+- Adres email musi zawierać @
+- Część po znaku @ musi zawierać kropkę
+
+3. Hasło, Hasło 2
+	- Pole hasło i hasło 2 musi być identyczne
+- Hasło musi mieć dużą literę (polski alfabet)
+- Hasło musi mieć liczbę 
+- Hasło musi być krótsze niż 20 znaków
+- Hasło musi być dłuższe niż 3 znak
+
+4. Regulamin	
+	- Użytkownik musi zaakceptować regulamin
+
+5. Link aktywacyjny
+	- Żeby zakończyć rejestrację należy aktywować konto za pomocą linku aktywacyjnego, który został wysłany na pocztę elektroniczną
+- Bezterminowy link, konto można aktywować w dowolnym czasie
+
+6. Zasady ogólne
+	- Formularz Rejestracji musi być responsywny (min. do 320px) 
+- Użytkownik nie może dwukrotnie utworzyć konta z tym samym adresem email lub nazwą użytkownika
+- Formularz powinien być odporny na  SQL INJECTION
+- Użytkownik powinien zostać poinformowany o pomyślnym wysłaniu hiperłącza aktywacyjnego na adres Email oraz pomyślnym utworzeniu konta w serwisie 
+- Użytkownik nie może kliknąć guzika “ZAłÓŻ KONTO” w trakcie walidacji aktualnego żądania
+- Hasło jest szyfrowane "argon2i"
+- Ochrona csrf
 
 ---
 
