@@ -22,6 +22,8 @@ Main Folder in Windows 10
 
 ## More info about test (Copy-Past)
 
+### Formularz rejestracji
+
 1. Nick
 	- Pole nick nie może być puste
 - Długość nicka musi być dłuższa niż 3 znaki
@@ -56,7 +58,22 @@ Main Folder in Windows 10
 - Użytkownik powinien zostać poinformowany o pomyślnym wysłaniu hiperłącza aktywacyjnego na adres Email oraz pomyślnym utworzeniu konta w serwisie 
 - Użytkownik nie może kliknąć guzika “ZAłÓŻ KONTO” w trakcie walidacji aktualnego żądania
 - Hasło jest szyfrowane "argon2i"
+- RWD
+
+### Formularz logowania
+
+1. Pole Login
+	- Na konto można się zalogować przy pomocy Nicku lub adresu email
+2. Pole Hasło
+	- Użytkownik podaje hasło, które ustalił przy rejestracji konta
+- Wprowadzone hasło w formularzu musi być zgodne z hasłem w bazie danych. Wpisane hasło zamieniane jest na funkcję skrótu “argon2i” i porównywane w bazie danych z hasłem ustalonym przy rejestracji.
+3. Zasady ogólne
+	- W wyniku poprawnego zalogowania, użytkownik przenoszony jest na wewnętrzną stronę serwisu
+- Poprawne logowanie może się odbyć tylko w momencie, kiedy użytkownik aktywował konto przy pomocy hiperłącza aktywacyjnego, wysłanego na konto pocztowe
+- W wyniku podania błędnych danych logowania użytkownik powinien zostać poinformowany, czy dane logowania są błędne, czy być może konto nie zostało jeszcze aktywowane
+- Formularz powinien być odporny na SQL INJECTION
 - Ochrona csrf
+- RWD
 
 ---
 
